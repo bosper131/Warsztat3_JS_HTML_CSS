@@ -1,0 +1,351 @@
+*  {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: "Raleway Regular", sans-serif ;
+}
+
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('fonts/Raleway-Regular.woff2') format('woff2'),
+    url('fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    height:2273px;
+    width:1200px;
+}
+
+header{
+    height:900px;
+    width:1200px;
+    margin: 0 auto;
+    overflow:auto;
+}
+
+.small-box{
+    height:40px;
+    width:100%;
+    background-color: black;
+    overflow:auto;
+}
+.sitOnChair{
+    color:white;
+    padding-left:70px;
+    padding-top:11px;
+    display:inline-block;
+    font-size:13px;
+    font-weight: 900;
+}
+.on{
+    color: mediumaquamarine;
+}
+
+
+ul{
+    list-style-type: none;
+
+}
+.rest{
+    width:150px;
+    color:white;
+    text-align:left;
+    display:inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    padding-top:13px;
+    padding-left:5px;
+    float:right;
+    overflow:auto;
+}
+.rest1{
+    width:150px;
+    color:white;
+    text-align:center;
+    display:inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    padding-top:13px;
+    padding-left:11px;
+    float:right;
+    overflow:auto;
+
+}
+
+.rest2{
+    width:150px;
+    color:white;
+    text-align:right;
+    display:inline-block;
+    font-size: 13px;
+    font-weight: 900;
+    padding-top:13px;
+    padding-right:8px;
+    float:right;
+    overflow:auto;
+}
+.chairclass{
+    height:505px;
+    width:100%;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243, 243, 243,1) 48%, rgba(216, 213, 221,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243, 243, 243,1) 48%, rgba(216, 213, 221,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243, 243, 243,1) 48%, rgba(216, 213, 221,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243, 243, 243,1) 48%, rgba(216, 213, 221,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243, 243, 243,1) 48%, rgba(216, 213, 221,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+.containerdash{
+    height:100%;
+    width:10%;
+    display:inline-block;
+    overflow:auto;
+}
+
+.dash1{
+    float:right;
+    margin: 145% 10px 100% 0;
+    color: rgb(0, 194, 168);
+    font-size:110px;
+}
+.chair{
+    height:90%;
+    width:35%;
+    background-image: url("images/black_chair.png");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    margin-top:30px;
+    background-position: center;
+    display:inline-block;
+    overflow:auto;
+}
+
+.lorem{
+    height:100%;
+    width:44%;
+    display:inline-block;
+    overflow:auto;
+}
+.actual{
+    height:28%;
+    width:75%;
+}
+
+.square{
+    height:97px;
+    width:120px;
+    float:right;
+    background-color: black;
+    margin-top:9.5px;
+    margin-right:5px;
+    border:1px solid black;
+}
+.square::before{
+    /*pytanie jak zrobić lepiej ten trojkat zeby te aktualnosci nie zjezdzaly mi w dół?*/
+    border:1px solid black;
+    height:15px;
+    padding-left:29.1%;
+    margin-left:38%;
+    content:"";
+    transform:rotate(45deg);
+    display: inline-block;
+    background-color: black;
+}
+
+.descr{
+    width:102px;
+    color:white;
+    text-align:left;
+    margin-left:11px;
+    font-size:17px;
+}
+.sit{
+    text-align: center;
+    font-weight: 900;
+    margin-right: 90px;
+    margin-top: -10px;
+    font-size:39.4px;
+}
+
+.loremtext{
+    width: 75.4%;
+    margin-top:24.6px;
+    margin-left:18.8px;
+    word-spacing: 2px;
+    color:black;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.button1{
+    background-color: #00C4A0;
+    border: none;
+    color: white;
+    padding: 8.1px 33.9px;
+    margin-left: 109.2px;
+    margin-top: 36.5px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 23.9px;
+    word-spacing: 7.5px;
+
+}
+
+.dash2{
+    float: left;
+    margin: 163.9% 0 110.7% 12.2px;
+    color: rgb(0, 194, 168);
+    font-size: 81.4px;
+
+}
+.pictureclass{
+    height:350px;
+    width:100%;
+    display: inline-block;
+    overflow:auto;
+}
+
+.whitechair{
+    height: 70%;
+    width: 35%;
+    background-image: url(images/box1_img.jpg);
+    background-repeat: no-repeat;
+    margin-left: 23px;
+    margin-bottom: 19px;
+    background-position: center;
+    display: inline-block;
+    overflow: auto;
+}
+
+.white_stripe{
+    width: 78.7%;
+    height: 26%;
+    background-color: rgba(243, 240, 247, 0.5);
+    margin-top: 157.2px;
+    margin-left: 46.1px;
+}
+
+.green_stripe{
+    width: 9.4%;
+    height: 0.7%;
+    background-color: rgb(0, 194, 168);
+    position: absolute;
+    margin-top: 35.5px;
+    margin-left: 11.4px;
+}
+
+.name{
+    font-size: 14.5px;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 14px;
+    font-weight: bold;
+}
+
+.chair_margarita{
+    height: 70%;
+    width: 35%;
+    background-image: url(images/box2_img.jpg);
+    background-repeat: no-repeat;
+    margin-left: -68.1px;
+    margin-bottom: 19px;
+    background-position: center;
+    display: inline-block;
+    overflow: auto;
+}
+
+.find_all_inputs{
+    height: 72.7%;
+    width: 28.3%;
+    border: 1px solid rgb(218, 218, 218);
+    margin-left: -21px;
+    margin-top: 25.5px;
+    background-position: center;
+    display: inline-block;
+    overflow: auto;
+}
+
+.name_find_all{
+    font-size: 14.5px;
+    position: absolute;
+    margin-top: 29.8px;
+    margin-left: 21.8px;
+    font-weight: bold;
+}
+
+.find_green_stripe{
+    width: 9.4%;
+    height: 0.7%;
+    background-color: rgb(0, 194, 168);
+    position: absolute;
+    margin-top: 51.8px;
+    margin-left: 23px;
+}
+
+.find_text{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 21.8px;
+    width: 86%;
+    line-height: 1.6;
+}
+
+section{
+    height: 720px;
+    width: 1198px;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 241);
+    overflow: auto;
+}
+
+.name_price_list{
+    font-size: 22px;
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 64px;
+}
+
+.green_stripe_price_list{
+    width: 21.8%;
+    height: 0.8%;
+    background-color: rgb(0, 194, 168);
+    position: absolute;
+    margin-top: 70.8px;
+    margin-left: 63px;
+}
+
+.basic_plan{
+    height: 69.4%;
+    width: 27.4%;
+    margin-left: 65.2px;
+    margin-top: 152px;
+    display: inline-block;
+    background-color: rgb(249, 249, 249);
+    overflow: auto;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 3px;
+}
+
+#outer-circle {
+    background: white;
+    border-radius: 50%;
+    height: 54px;
+    width: 53px;
+    position: absolute;
+    margin-left: 135.3px;
+    margin-top: -39.4px;
+    border: 2px solid rgb(193, 193, 193)
+}
+#inner-circle {
+    background: rgb(193, 193, 193);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-top: 26.8%;
+    margin-left: 24%;
+}
