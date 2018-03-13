@@ -23,7 +23,7 @@
             <div class="lorem">
                 <div class="actual">
                     <div class="square">
-                        <ul>
+                        <ul class="list_with_li">
                             <li class="descr">Aktualności</li>
                             <li class="descr">Nasz team</li>
                             <li class="descr">Historia</li>
@@ -60,23 +60,84 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="name_price_list">CENNIK</div>
-        <div class="green_stripe_price_list"></div>
+    <section class="price_container">
+        <span class="name_price_list">CENNIK</span>
         <div class="basic_plan">
-            <div id="outer-circle">
-                <div id="inner-circle">
+            <div class="outer-circle">
+                <div class="inner-circle">
                 </div>
             </div>
+            <span class="plan_name">BASIC PLAN</span>
+            <div class="circle">
+                <span class="num85">85</span>
+                <span class="num99">99</span>
+                <span class="PLN">PLN/MSC</span>
+            </div>
+            <div class="zakupTowaru">Zakup towaru + dowóz</div>
+            <div class="serwis">Serwis</div>
+            <button class="button_add">DOŁĄCZ</button>
         </div>
+        <div class="standard_plan">
+            <div class="outer-circle-standard">
+                <div class="inner-circle-standard">
+                </div>
+            </div>
+            <span class="plan_name-standard">STANDARD PLAN</span>
+            <div class="circle-standard">
+                <span class="num95-standard">95</span>
+                <span class="num99-standard">99</span>
+                <span class="PLN-standard">PLN/MSC</span>
+            </div>
+            <div class="zakupTowaru-standard">Zakup towaru + dowóz</div>
+            <div class="serwis-standard">Serwis</div>
+            <div class="gwarancja-standard">Gwarancja 5 lat</div>
+            <button class="button_add-standard">DOŁĄCZ</button>
+        </div>
+        <div class="advanced_plan">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                </div>
+            </div>
+            <span class="plan_name-advanced">ADVANCE PLAN</span>
+            <div class="circle">
+                <span class="num211">211</span>
+                <span class="num99">00</span>
+                <span class="PLN">PLN/MSC</span>
+            </div>
+            <div class="zakupTowaru">Zakup towaru + dowóz</div>
+            <div class="serwis">Serwis</div>
+            <div class="gwarancja-advanced">Gwarancja 6 lat</div>
+            <div class="porady">Porady projektanta</div>
 
+            <button class="button_add-advance">DOŁĄCZ</button>
 
-
-
-
-
+        </div>
+    </section>
+    <section class="form_container">
+        <span class="name_price_list_form">KONTAKT</span>
+        <div class="inputs">
+        <input	type="text"	class="name_form" placeholder="Imię"/>
+        <input	type="email"	class="email_form" placeholder="email"/>
+        </div>
+        <div class="red_chair"></div>
+        <div class="contain_mess_box">
+        <textarea  placeholder="Wiadomość"></textarea>
+        <input type="checkbox"  class="checking" id="adventure_id" checked/>
+            <label for="adventure_id" class="label_adv" >Zgadzam się na przetwarzanie danych osobowych</label>
+            <button class="button_send">WYŚLIJ</button>
+        </div>
     </section>
 
+    <footer class="subText">
+        <span class="copyright">Copyright 2014 | All Righths Reserved. - Sit On Chair</span>
+        <div class="end"><span class="sitEnd">SIT </span><span class="onEnd"> ON </span><span class="sitEnd">CHAIR</span></div>
+        <div class="icons">
+            <div class="flickr"></div>
+            <div class="vimeo"></div>
+            <div class="pinterest"></div>
+            <div class="twitter"></div>
+        </div>
+    </footer>
 
 </body>
 </html>

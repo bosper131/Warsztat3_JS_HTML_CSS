@@ -143,15 +143,28 @@ ul{
     border:1px solid black;
 }
 .square::before{
-    /*pytanie jak zrobić lepiej ten trojkat zeby te aktualnosci nie zjezdzaly mi w dół?*/
-    border:1px solid black;
-    height:15px;
-    padding-left:29.1%;
-    margin-left:38%;
-    content:"";
-    transform:rotate(45deg);
-    display: inline-block;
-    background-color: black;
+    /* height: 15px; */
+    /* padding-left: 29.1%; */
+        margin-left: 2.8%;
+    /* margin-bottom: 70px; */
+    content: "";
+    /* transform: rotate(45deg); */
+    /* display: inline-block; */
+    /* background-color: black; */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /* margin-bottom: 100px; */
+    position: absolute;
+    top: 40px;
+    /* text-align: center; */
+    border-bottom: 10px solid black;
+
+}
+.list_with_li{
+    margin-top:10px;
+
 }
 
 .descr{
@@ -231,8 +244,8 @@ ul{
 }
 
 .green_stripe{
-    width: 9.4%;
-    height: 0.7%;
+    width: 140px;
+    height: 7px;
     background-color: rgb(0, 194, 168);
     position: absolute;
     margin-top: 35.5px;
@@ -240,6 +253,7 @@ ul{
 }
 
 .name{
+    width: 144px;
     font-size: 14.5px;
     position: absolute;
     margin-top: 16px;
@@ -271,6 +285,7 @@ ul{
 }
 
 .name_find_all{
+    width: 144px;
     font-size: 14.5px;
     position: absolute;
     margin-top: 29.8px;
@@ -279,8 +294,8 @@ ul{
 }
 
 .find_green_stripe{
-    width: 9.4%;
-    height: 0.7%;
+    width: 140px;
+    height: 7px;
     background-color: rgb(0, 194, 168);
     position: absolute;
     margin-top: 51.8px;
@@ -295,7 +310,7 @@ ul{
     line-height: 1.6;
 }
 
-section{
+.price_container{
     height: 720px;
     width: 1198px;
     margin: 0 auto;
@@ -310,13 +325,12 @@ section{
     margin-left: 64px;
 }
 
-.green_stripe_price_list{
-    width: 21.8%;
-    height: 0.8%;
+.name_price_list::after{
+    width: 320.9px;
+    height: 8.5px;
     background-color: rgb(0, 194, 168);
-    position: absolute;
-    margin-top: 70.8px;
-    margin-left: 63px;
+    content: "";
+    display: block;
 }
 
 .basic_plan{
@@ -331,7 +345,7 @@ section{
     border-radius: 3px;
 }
 
-#outer-circle {
+.outer-circle {
     background: white;
     border-radius: 50%;
     height: 54px;
@@ -341,11 +355,513 @@ section{
     margin-top: -39.4px;
     border: 2px solid rgb(193, 193, 193)
 }
-#inner-circle {
+.inner-circle {
     background: rgb(193, 193, 193);
     border-radius: 50%;
     height: 25px;
     width: 25px;
     margin-top: 26.8%;
     margin-left: 24%;
+}
+
+.plan_name{
+    color: rgb(0, 194, 168);
+    margin-top: 22px;
+    width:202px;
+    margin-left: 95.5px;
+    font-weight: bold;
+    font-size: 23.3px;
+    position: absolute;
+}
+.circle{
+    border-radius: 50%;
+    border: 2px solid rgb(193, 193, 193);
+    height: 130px;
+    width: 130px;
+    margin-left: 96px;
+    margin-top: 75px;
+}
+.PLN{
+    position: absolute;
+    margin-left: 26.6px;
+    margin-top: 78px;
+    font-size: 15.6px;
+    font-weight: bold;
+    color: rgb(193, 193, 193);
+}
+
+.num85{
+    position: absolute;
+    margin-left: 33.1px;
+    margin-top: 20.6px;
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(193, 193, 193);
+}
+
+.num99{
+    position: absolute;
+    margin-left: 85.6px;
+    margin-top: 28.2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(193, 193, 193);
+
+}
+.zakupTowaru{
+    height: 43px;
+    background-color: #E3E3E3;
+    margin-top: 31.8px;
+    text-align: center;
+    line-height: 43px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.serwis{
+    height: 43px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    line-height: 43px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.button_add{
+    background-color: #00C4A0;
+    border: none;
+    color: white;
+    padding: 8.2px 32.3px;
+    margin-left: 103.7px;
+    margin-top: 120.5px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+
+.standard_plan{
+    height: 499.67px;
+    width: 27.4%;
+    margin-left: 29px;
+    margin-top: 152px;
+    display: inline-block;
+    background-color: #00C4A0;
+    overflow: auto;
+    border: 2px solid #00C4A0;
+    border-radius: 3px;
+}
+
+.outer-circle-standard{
+    background: #00C4A0;
+    border-radius: 50%;
+    height: 54px;
+    width: 53px;
+    position: absolute;
+    margin-left: 135.3px;
+    margin-top: -39.4px;
+
+}
+.inner-circle-standard {
+    background: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-top: 26.8%;
+    margin-left: 24%;
+}
+
+.plan_name-standard{
+    color: white;
+    width:202px;
+    margin-top: 22px;
+    margin-left: 75.5px;
+    font-weight: bold;
+    font-size: 23.3px;
+    position: absolute;
+}
+.circle-standard{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin-left: 96px;
+    background-color: white;
+    margin-top: 81px;
+}
+.PLN-standard{
+    position: absolute;
+    margin-left: 26.6px;
+    margin-top: 78px;
+    font-size: 15.6px;
+    font-weight: bold;
+    color: #00C4A0;
+}
+
+.num95-standard{
+    position: absolute;
+    margin-left: 33.1px;
+    margin-top: 20.6px;
+    font-size: 44px;
+    font-weight: bold;
+    color: #00C4A0;
+}
+
+.num99-standard{
+    position: absolute;
+    margin-left: 85.6px;
+    margin-top: 28.2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00C4A0;
+
+}
+.zakupTowaru-standard{
+    height: 43px;
+    background-color: white;
+    margin-top: 26px;
+    text-align: center;
+    line-height: 48.1px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.serwis-standard{
+
+    height: 43px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    line-height: 49.4px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.gwarancja-standard{
+    background-color: white;
+    text-align: center;
+    line-height: 47.7px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.button_add-standard{
+    background-color: white;
+    border: none;
+    color: #00C4A0;
+    padding: 8.2px 32.3px;
+    margin-left: 103.6px;
+    margin-top: 75px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.porady{
+    height: 43px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    line-height: 43px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+}
+
+.button_add-advance{
+    background-color: #00C4A0;
+    border: none;
+    color: white;
+    padding: 8.2px 32.3px;
+    margin-left: 102.1px;
+    margin-top: 35px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.advanced_plan{
+    height: 69.4%;
+    width: 27.4%;
+    margin-left: 30px;
+    display: inline-block;
+    background-color: rgb(249, 249, 249);
+    overflow: auto;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 3px;
+
+}
+
+.gwarancja-advanced{
+    height: 43px;
+    background-color: #E3E3E3;
+    text-align: center;
+    line-height: 43.9px;
+    font-size: x-large;
+    font-weight: 500;
+    color: #999999;
+
+
+}
+
+.num211{
+    position: absolute;
+    margin-left: 27px;
+    margin-top: 20.6px;
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(193, 193, 193);
+
+}
+
+.plan_name-advanced{
+    width:202px;
+    color: rgb(0, 194, 168);
+    margin-top: 22px;
+    margin-left: 75.5px;
+    font-weight: bold;
+    font-size: 23.3px;
+    position: absolute;
+
+}
+.form_container{
+    height: 491px;
+    width: 1198px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: auto;
+
+
+
+}
+
+.name_price_list_form{
+    font-size: 22px;
+    position: absolute;
+    margin-top: 31px;
+    margin-left: 71.5px;
+}
+
+.name_price_list_form::after{
+    width: 320.9px;
+    height: 8.5px;
+    background-color: rgb(0, 194, 168);
+    content: "";
+    display: block;
+}
+
+.name_form{
+    margin-top: 116.6px;
+    margin-left: 70px;
+    border: 1px solid #00C4A0;
+    width: 635px;
+    position: absolute;
+    height: 66.33px;
+}
+
+::-webkit-input-placeholder	{
+    font-size:31px;
+    padding-left: 14px;
+    color:rgb(221, 221, 221);
+}
+
+.email_form{
+    margin-top: 209.2px;
+    margin-left: 70px;
+    border: 1px solid #00C4A0;
+    width: 635px;
+    position: absolute;
+    height: 66.33px;
+}
+
+.inputs{
+    float:left;
+    display:block;
+}
+
+.red_chair{
+    background-image: url(images/red_chair.png);
+    width: 264px;
+    background-repeat: no-repeat;
+    height: 210px;
+    margin-top: 90px;
+    margin-right: 150px;
+    float: right;
+}
+
+textarea {
+    resize: none;
+    margin-left: 70px;
+    width: 633.7px;
+    height: 190px;
+    border: 1px solid #00C4A0;
+    line-height: 60px;
+    float: left;
+}
+
+
+/*.checking{*/
+
+    /*position: absolute;*/
+    /*width: 160px;*/
+    /*height: 48.6px;*/
+    /*left: 710px;*/
+    /*top: 1947.4px;*/
+
+/*}*/
+
+
+.contain_mess_box{
+    width: 1198px;
+    height: 190px;
+    display: block;
+    margin-top: 300px;
+
+}
+
+label{
+    margin-left: 120px;
+    margin-top: 30.6px;
+    font-size: 20px;
+    width: 300px;
+    color:rgb(195, 195, 195)
+}
+
+input[type=checkbox]  {
+    position: absolute;
+    width: 160px;
+    height: 48.6px;
+    left: 710px;
+    top: 1947.4px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    /* border-radius: 0.2em; */
+    /* display: block; */
+    width: 0.8em;
+    position: absolute;
+    height: 0.8em;
+    /* padding-left: 0.2em; */
+    /* padding-bottom: 0.3em; */
+    /* margin-right: 350px; */
+    margin-left: -60px;
+    font-size: 60px;
+    /* vertical-align: bottom; */
+    color: transparent;
+    background-color: white;
+    /* transition: .2s; */
+    border: 1px solid rgb(0, 210, 177);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: white;
+    border-color: rgb(0, 210, 177);
+    color: rgb(0, 210, 177);
+    font-size: 60px;
+    text-align: center;
+    line-height: 47px;
+}
+
+.button_send{
+    background-color: #00C4A0;
+    border: none;
+    width: 345.6px;
+    height: 70.6px;
+    color: white;
+    padding: 8.1px 33.9px;
+    margin-left: 57px;
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 33.9px;
+    word-spacing: 7.5px;
+}
+
+.subText{
+    width: 1200px;
+    height: 130px;
+}
+
+.copyright{
+    float: left;
+    margin-left: 66px;
+    margin-top: 93px;
+    font-size: 17.4px;
+    font-weight: 700;
+    color: #B0B0B0;
+}
+
+.icons{
+    float:right;
+    margin-top: 81px;
+    margin-right: 69px;
+}
+
+.flickr{
+    width: 34px;
+    height: 34px;
+    background-image: url("images/flickr.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.twitter{
+    width: 34px;
+    height: 34px;
+    background-image: url("images/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.pinterest{
+    width: 34px;
+    height: 34px;
+    background-image: url("images/pinterest.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.vimeo{
+    width: 34px;
+    height: 34px;
+    background-image: url("images/vimeo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.end{
+    float:right;
+    margin-top: 89px;
+    margin-right: 82.2px;
+    font-size: 19px;
+    word-spacing: 5.3px;
+}
+
+.sitEnd{
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+}
+
+.onEnd{
+    font-weight: bold;
+
 }
