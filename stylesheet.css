@@ -46,7 +46,12 @@ header{
 
 ul{
     list-style-type: none;
+    float:right;
 
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
 }
 .rest{
     width:150px;
@@ -55,7 +60,7 @@ ul{
     display:inline-block;
     font-size: 13px;
     font-weight: 900;
-    padding-top:13px;
+    padding-top:12px;
     padding-left:5px;
     float:right;
     overflow:auto;
@@ -67,8 +72,8 @@ ul{
     display:inline-block;
     font-size: 13px;
     font-weight: 900;
-    padding-top:13px;
-    padding-left:11px;
+    padding-top:6px;
+    padding-left:13px;
     float:right;
     overflow:auto;
 
@@ -81,11 +86,49 @@ ul{
     display:inline-block;
     font-size: 13px;
     font-weight: 900;
-    padding-top:13px;
-    padding-right:8px;
+    padding-top:6px;
+    padding-right:5px;
     float:right;
     overflow:auto;
 }
+
+.submenucontainer{
+    display: none;
+    position: absolute;
+    padding-top: 44px;
+    padding-left: 20px;
+}
+.rest2:hover .submenucontainer{
+    display: block;
+}
+ .submenucontainer ul{
+    background: black;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    width: 120px;
+    left: 50px;
+
+}
+.submenucontainer ul:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent black transparent;
+    top: -10px;
+    left: 40px;
+}
+
+.submenucontainer ul a{
+    color: #ffffff;
+    float:left;
+    line-height: 25px;
+    font-size: 15px;
+}
+
 .chairclass{
     height:505px;
     width:100%;
@@ -133,35 +176,35 @@ ul{
     width:75%;
 }
 
-.square{
-    height:97px;
-    width:120px;
-    float:right;
-    background-color: black;
-    margin-top:9.5px;
-    margin-right:5px;
-    border:1px solid black;
-}
-.square::before{
-    /* height: 15px; */
-    /* padding-left: 29.1%; */
-        margin-left: 2.8%;
-    /* margin-bottom: 70px; */
-    content: "";
-    /* transform: rotate(45deg); */
-    /* display: inline-block; */
-    /* background-color: black; */
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    /* margin-bottom: 100px; */
-    position: absolute;
-    top: 40px;
-    /* text-align: center; */
-    border-bottom: 10px solid black;
+/*.square{*/
+    /*height:97px;*/
+    /*width:120px;*/
+    /*float:right;*/
+    /*background-color: black;*/
+    /*margin-top:9.5px;*/
+    /*margin-right:5px;*/
+    /*border:1px solid black;*/
+/*}*/
+/*.square::before{*/
+    /*!* height: 15px; *!*/
+    /*!* padding-left: 29.1%; *!*/
+        /*margin-left: 2.8%;*/
+    /*!* margin-bottom: 70px; *!*/
+    /*content: "";*/
+    /*!* transform: rotate(45deg); *!*/
+    /*!* display: inline-block; *!*/
+    /*!* background-color: black; *!*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-left: 10px solid transparent;*/
+    /*border-right: 10px solid transparent;*/
+    /*!* margin-bottom: 100px; *!*/
+    /*position: absolute;*/
+    /*top: 40px;*/
+    /*!* text-align: center; *!*/
+    /*border-bottom: 10px solid black;*/
 
-}
+/*}*/
 .list_with_li{
     margin-top:10px;
 
@@ -177,9 +220,8 @@ ul{
 .sit{
     text-align: center;
     font-weight: 900;
-    margin-right: 90px;
-    margin-top: -10px;
-    font-size:39.4px;
+    margin-right: 120px;
+    margin-top: 0px;
 }
 
 .loremtext{
@@ -208,10 +250,10 @@ ul{
     word-spacing: 7.5px;
 
 }
-
+/*nie wiem o co chodzi z tym spadaniem tego dasha zmienilem margin na padding (o to chodziło ?)*/
 .dash2{
     float: left;
-    margin: 163.9% 0 110.7% 12.2px;
+    padding: 163.9% 0 110.7% 12.2px;
     color: rgb(0, 194, 168);
     font-size: 81.4px;
 
@@ -401,7 +443,7 @@ ul{
 
 .num99{
     position: absolute;
-    margin-left: 85.6px;
+    margin-left: 89px;
     margin-top: 28.2px;
     font-size: 14px;
     font-weight: bold;
@@ -682,9 +724,13 @@ ul{
     height: 66.33px;
 }
 
+
 .inputs{
     float:left;
     display:block;
+}
+input, textarea{
+    font-size: 30px;
 }
 
 .red_chair{
@@ -701,7 +747,7 @@ textarea {
     resize: none;
     margin-left: 70px;
     width: 633.7px;
-    height: 190px;
+    height: 170px;
     border: 1px solid #00C4A0;
     line-height: 60px;
     float: left;
@@ -729,9 +775,10 @@ textarea {
 
 label{
     margin-left: 120px;
-    margin-top: 30.6px;
+    margin-top: 30px;
     font-size: 20px;
     width: 300px;
+    float:left;
     color:rgb(195, 195, 195)
 }
 
