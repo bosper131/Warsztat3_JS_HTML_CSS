@@ -143,7 +143,9 @@ a{
 .containerdash{
     height:100%;
     width:10%;
-    display:inline-block;
+    /*display:inline-block;*/
+    display: block;
+    float:left;
     overflow:auto;
 }
 
@@ -161,14 +163,16 @@ a{
     background-size: 140%;
     margin-top:30px;
     background-position: center;
-    display:inline-block;
+    display: block;
+    float:left;
     overflow:auto;
 }
 
 .lorem{
     height:100%;
     width:44%;
-    display:inline-block;
+    display: block;
+    float:left;
     overflow:auto;
 }
 .actual{
