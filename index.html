@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CodersLab</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -11,8 +12,10 @@
             <a class="sitOnChair" href="https://www.w3schools.com">SIT <span class="on">ON</span>          CHAIR</a>
             <ul>
                 <li class="rest"><a href="https://www.w3schools.com">KONTAKT </a></li>
-                <li class="rest1"><a class="rest1" href="https://www.w3schools.com">GALERIA </a></li>
-                <li class="rest2"><a class="rest2" href="https://www.w3schools.com">O FIRMIE </a>
+                <li class="rest1"><a class="rest1" href="https://www.w3schools.com">GALERIA </a>
+                </li>
+                <li class="rest2">
+                    <a class="rest2" href="https://www.w3schools.com">O FIRMIE </a>
                     <div class="submenucontainer">
                         <ul>
                             <li><a href="#">Aktualności</a></li>
@@ -27,6 +30,10 @@
             <div class="containerdash"><span class="dash1">&lsaquo;                                        </span>
             </div>
             <div class="chair">
+                <ul>
+                    <li><img src="images/black_chair.png"></li>
+                    <li><img src="images/orange_chair.png"></li>
+                </ul>
             </div>
             <div class="lorem">
                 <div class="actual">
@@ -40,7 +47,14 @@
                 </div>
                 <h1 class="sit">SIT <span class="on"> ON </span>OUR <span class="on">CHAIR</span>
                 </h1>
-                <div class="loremtext">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</div>
+                <div class="loremtext">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+                        </li>
+                    <li>Ut molestie a, ultricies porta urna. Etiam ullamcorper.Lorem ipsum dolor sit amet enim. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                    </li>
+                    </ul></div>
+
                 <button class="button1">ZOBACZ WIĘCEJ</button>
             </div>
             <div class="containerdash"><span class="dash2">&gt;</span></div>
@@ -119,6 +133,88 @@
 
         </div>
     </section>
+    <section class="application ">
+        <div class="main_width">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li class="chairName" data-price="200">Clair</li>
+                            <li class="chairName" data-price="250">Margarita</li>
+                            <li class="chairName" data-price="150">Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li class="chairColor">Czerwony</li>
+                            <li class="chairColor">Czarny</li>
+                            <li class="chairColor">Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li class="fabric">Tkanina</li>
+                            <li class="fabric">Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transportprice="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
     <section class="form_container">
         <span class="name_price_list_form">KONTAKT</span>
         <form class="inputs">
