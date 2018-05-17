@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for(var i = 0 ; i<fabricLength;i++){
         fabric[i].addEventListener('click',function () {
             pattern.innerText = this.innerText;
-            fabricVal.innerText = '0';
+            fabricVal.innerText = this.dataset.price;
             suma();
             this.parentElement.style.display = 'none';
         })
